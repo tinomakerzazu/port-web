@@ -973,20 +973,24 @@ function initNotifications() {
     const notificationsContainer = document.getElementById('notificationsContainer');
     if (!notificationsContainer) return;
     
-    // Fictional client data
+    // Fictional client data - More realistic and varied
     const clientNames = [
         'María González', 'Carlos Rodríguez', 'Ana Martínez', 'Luis Fernández',
         'Sofia Pérez', 'Diego Sánchez', 'Valentina López', 'Andrés Torres',
         'Camila Ramírez', 'Sebastián Gómez', 'Isabella Herrera', 'Mateo Díaz',
         'Lucía Morales', 'Nicolás Castro', 'Emma Vargas', 'Daniel Jiménez',
-        'Olivia Ruiz', 'Gabriel Mendoza', 'Amelia Ortega', 'Santiago Navarro'
+        'Olivia Ruiz', 'Gabriel Mendoza', 'Amelia Ortega', 'Santiago Navarro',
+        'Roberto Silva', 'Patricia Vega', 'Fernando Castro', 'Laura Mendoza',
+        'Ricardo Paredes', 'Carmen Flores', 'Javier Ríos', 'Monica Herrera'
     ];
     
     const companyTypes = [
         'Restaurante', 'Tienda Online', 'Consultoría', 'Startup Tech',
         'E-commerce', 'Agencia Digital', 'Negocio Local', 'Empresa Familiar',
         'Freelancer', 'ONG', 'Clínica', 'Gimnasio', 'Hotel', 'Cafetería',
-        'Tienda de Ropa', 'Servicios Profesionales', 'Educación Online', 'Bienes Raíces'
+        'Tienda de Ropa', 'Servicios Profesionales', 'Educación Online', 'Bienes Raíces',
+        'Farmacia', 'Taller Mecánico', 'Salón de Belleza', 'Academia', 'Veterinaria',
+        'Estudio Fotográfico', 'Bufete de Abogados', 'Inmobiliaria'
     ];
     
     const projectTypes = [
@@ -997,12 +1001,26 @@ function initNotifications() {
         'sitio web empresarial',
         'plataforma e-commerce',
         'aplicación web',
-        'sitio web institucional'
+        'sitio web institucional',
+        'sitio web responsive',
+        'plataforma de gestión',
+        'sistema de reservas online'
     ];
     
     const emailDomains = [
         'gmail.com', 'outlook.com', 'yahoo.com', 'hotmail.com',
-        'empresa.com', 'negocio.com', 'startup.com', 'consultoria.com'
+        'empresa.com', 'negocio.com', 'startup.com', 'consultoria.com',
+        'protonmail.com', 'icloud.com', 'live.com'
+    ];
+    
+    const requestMessages = [
+        'Solicitud para crear una',
+        'Necesito desarrollar una',
+        'Estoy interesado en una',
+        'Buscamos crear una',
+        'Queremos implementar una',
+        'Requiero una',
+        'Necesitamos una'
     ];
     
     function generateClientEmail(name) {
@@ -1010,7 +1028,17 @@ function initNotifications() {
         const firstName = nameParts[0];
         const lastName = nameParts[1] || nameParts[0];
         const domain = emailDomains[Math.floor(Math.random() * emailDomains.length)];
-        return `${firstName}.${lastName}@${domain}`;
+        
+        // More realistic email variations
+        const variations = [
+            `${firstName}.${lastName}@${domain}`,
+            `${firstName}${lastName}@${domain}`,
+            `${firstName}_${lastName}@${domain}`,
+            `${firstName}${Math.floor(Math.random() * 99) + 1}@${domain}`,
+            `${lastName}.${firstName}@${domain}`
+        ];
+        
+        return variations[Math.floor(Math.random() * variations.length)];
     }
     
     function getInitials(name) {
@@ -1022,14 +1050,17 @@ function initNotifications() {
     }
     
     function getRandomTimeAgo() {
-        const times = ['Hace 2 min', 'Hace 5 min', 'Hace 10 min', 'Hace 15 min', 'Hace 20 min'];
-        return times[Math.floor(Math.random() * times.length)];
+        // More realistic time variations (2-30 minutes)
+        const minutes = [2, 3, 4, 5, 7, 10, 12, 15, 18, 20, 25, 30];
+        const selectedMin = minutes[Math.floor(Math.random() * minutes.length)];
+        return `Hace ${selectedMin} min`;
     }
     
     function createNotification() {
         const clientName = clientNames[Math.floor(Math.random() * clientNames.length)];
         const companyType = companyTypes[Math.floor(Math.random() * companyTypes.length)];
         const projectType = projectTypes[Math.floor(Math.random() * projectTypes.length)];
+        const requestMessage = requestMessages[Math.floor(Math.random() * requestMessages.length)];
         const clientEmail = generateClientEmail(clientName);
         const initials = getInitials(clientName);
         const timeAgo = getRandomTimeAgo();
@@ -1053,7 +1084,7 @@ function initNotifications() {
             <div class="notification-content">
                 <div class="notification-title">Nueva Solicitud de Proyecto</div>
                 <div class="notification-message">
-                    Solicitud para crear una <strong>${projectType}</strong> para <strong>${companyType}</strong>.
+                    ${requestMessage} <strong>${projectType}</strong> para <strong>${companyType}</strong>.
                 </div>
                 <div class="notification-client">
                     <div class="notification-avatar">${initials}</div>
@@ -1072,10 +1103,10 @@ function initNotifications() {
             removeNotification(notification);
         });
         
-        // Auto-remove after 8 seconds
+        // Auto-remove after 10 seconds (longer for 2-minute intervals)
         setTimeout(() => {
             removeNotification(notification);
-        }, 8000);
+        }, 10000);
         
         notificationsContainer.appendChild(notification);
         
@@ -1097,15 +1128,15 @@ function initNotifications() {
         }, 400);
     }
     
-    // Create first notification after 5 seconds
+    // Create first notification after 30 seconds (more realistic)
     setTimeout(() => {
         createNotification();
-    }, 5000);
+    }, 30000);
     
-    // Create notifications every 15 seconds
+    // Create notifications every 2 minutes (120000 ms)
     setInterval(() => {
         createNotification();
-    }, 15000);
+    }, 120000);
 }
 
 // Performance optimization: Throttle scroll events
