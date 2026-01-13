@@ -26,7 +26,35 @@ Un portafolio web único y moderno diseñado con una paleta de colores excepcion
 ### Desarrollo Local
 Simplemente abre el archivo `index.html` en tu navegador para ver el portafolio.
 
-### Despliegue en Netlify
+### Despliegue en Vercel (Recomendado)
+
+1. **Opción 1: Desde GitHub (Recomendado)**
+   - Ve a [Vercel](https://vercel.com)
+   - Haz clic en "Add New Project"
+   - Conecta tu repositorio de GitHub
+   - Selecciona el repositorio `port-web`
+   - Configuración:
+     - **Framework Preset**: "Other" (o déjalo en auto-detect)
+     - **Root Directory**: `./` (raíz del proyecto)
+     - **Build Command**: Déjalo vacío (no necesita build)
+     - **Output Directory**: `./` (raíz)
+   - Haz clic en "Deploy"
+   - ¡Listo! Tu sitio estará en línea
+
+2. **Opción 2: Vercel CLI**
+   ```bash
+   npm i -g vercel
+   vercel
+   ```
+
+3. **Configuración Automática**
+   - El archivo `vercel.json` ya está configurado con:
+     - Headers de seguridad
+     - Cache optimization
+     - Rewrites para SPA
+     - Configuración de rutas
+
+### Despliegue en Netlify (Alternativa)
 
 1. **Opción 1: Arrastrar y Soltar**
    - Ve a [Netlify Drop](https://app.netlify.com/drop)
@@ -34,7 +62,6 @@ Simplemente abre el archivo `index.html` en tu navegador para ver el portafolio.
    - ¡Listo! Tu sitio estará en línea
 
 2. **Opción 2: Git Integration**
-   - Sube tu proyecto a GitHub
    - Conecta tu repositorio con Netlify
    - Netlify detectará automáticamente la configuración
 
@@ -114,8 +141,9 @@ Compatible con todos los navegadores modernos:
 
 ## 📦 Archivos de Configuración
 
-- `netlify.toml`: Configuración de Netlify (headers, cache, build)
-- `_redirects`: Manejo de rutas para SPA
+- `vercel.json`: Configuración de Vercel (headers, cache, rewrites) - **Para Vercel**
+- `netlify.toml`: Configuración de Netlify (headers, cache, build) - **Para Netlify**
+- `_redirects`: Manejo de rutas para SPA - **Para Netlify**
 - `index.html`: Estructura principal con meta tags de seguridad
 - `css/styles.css`: Estilos optimizados con responsive design
 - `js/script.js`: JavaScript con error handling y validaciones
