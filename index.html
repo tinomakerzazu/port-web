@@ -1,44 +1,49 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Tino Stacker - Full Stack Developer especializado en desarrollo web moderno, aplicaciones escalables y soluciones digitales innovadoras.">
+    <meta name="description"
+        content="Tino Stacker - Full Stack Developer especializado en desarrollo web moderno, aplicaciones escalables y soluciones digitales innovadoras.">
     <meta name="keywords" content="Full Stack Developer, Web Developer, JavaScript, React, Node.js, Portfolio">
     <meta name="author" content="Tino Stacker">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#25344F">
-    
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Tino Stacker | Full Stack Developer">
     <meta property="og:description" content="Full Stack Developer especializado en desarrollo web moderno">
     <meta property="og:image" content="assets/images/logo.jpg">
-    
+
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:title" content="Tino Stacker | Full Stack Developer">
     <meta property="twitter:description" content="Full Stack Developer especializado en desarrollo web moderno">
-    
+
     <!-- Security Headers (Note: Netlify will handle CSP via netlify.toml) -->
-    
+
     <title>Tino Stacker | Full Stack Developer</title>
-    
+
     <!-- Preload Critical Resources -->
     <link rel="preload" href="css/styles.css" as="style">
     <link rel="preload" href="js/script.js" as="script">
     <link rel="preload" href="assets/images/logo.jpg" as="image">
-    
+
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;700;900&family=JetBrains+Mono:wght@400;500;600;700&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
     <!-- Favicon -->
     <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg">
 </head>
+
 <body>
     <!-- Loading Screen -->
     <div class="loader" id="loader">
@@ -69,7 +74,7 @@
         <div class="nav-container">
             <div class="logo">
                 <div class="logo-glow-effect"></div>
-                <img src="assets/images/logo.jpg" alt="Tino Stacker Logo" class="logo-img">
+                <img src="assets/images/logo.jpg" alt="Tino Stacker Logo" class="logo-img" width="40" height="40">
                 <span class="logo-text">
                     <span class="logo-text-main">TINO</span>
                     <span class="logo-text-accent">STACKER</span>
@@ -82,7 +87,7 @@
                 <li><a href="#projects" class="nav-link"><span data-text="Proyectos">Proyectos</span></a></li>
                 <li><a href="#contact" class="nav-link"><span data-text="Contacto">Contacto</span></a></li>
             </ul>
-            <div class="hamburger" id="hamburger">
+            <div class="hamburger" id="hamburger" aria-label="Abrir menú de navegación">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -108,7 +113,8 @@
                 <div class="badge-pulse"></div>
                 <span class="badge-icon">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5V6.75a4.5 4.5 0 119 0v3.75M3.75 21.75h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H3.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M13.5 10.5V6.75a4.5 4.5 0 119 0v3.75M3.75 21.75h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H3.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
                     </svg>
                 </span>
                 <span class="badge-text">SISTEMA ACTIVO</span>
@@ -138,7 +144,8 @@
                     <span class="btn-content">
                         <span>Ver Proyectos</span>
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                            <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                     </span>
                     <div class="btn-shine"></div>
@@ -147,7 +154,8 @@
                     <span class="btn-content">
                         <span>Contactar</span>
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                            <path d="M2.5 17.5L17.5 2.5M17.5 2.5H7.5M17.5 2.5V12.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2.5 17.5L17.5 2.5M17.5 2.5H7.5M17.5 2.5V12.5" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                     </span>
                 </a>
@@ -155,31 +163,37 @@
             <div class="hero-stats">
                 <div class="stat-box">
                     <div class="stat-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5 0c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125" />
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5 0c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125" />
                         </svg>
                     </div>
-                    <div class="stat-number" data-target="50">0</div>
+                    <div class="stat-number" data-target="12">0</div>
                     <div class="stat-label">Proyectos</div>
                     <div class="stat-glow"></div>
                 </div>
                 <div class="stat-box">
                     <div class="stat-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" />
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" />
                         </svg>
                     </div>
-                    <div class="stat-number" data-target="30">0</div>
+                    <div class="stat-number" data-target="8">0</div>
                     <div class="stat-label">Clientes</div>
                     <div class="stat-glow"></div>
                 </div>
                 <div class="stat-box">
                     <div class="stat-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                     </div>
-                    <div class="stat-number" data-target="5">0</div>
+                    <div class="stat-number" data-target="3">0</div>
                     <div class="stat-label">Años Exp.</div>
                     <div class="stat-glow"></div>
                 </div>
@@ -226,20 +240,22 @@
                         <span class="code-symbol">/&gt;</span>
                     </h3>
                     <p>
-                        Desarrollador especializado en crear aplicaciones web y móviles de alto rendimiento. 
-                        Experto en arquitectura de software escalable, APIs RESTful, y desarrollo de interfaces 
+                        Desarrollador especializado en crear aplicaciones web y móviles de alto rendimiento.
+                        Experto en arquitectura de software escalable, APIs RESTful, y desarrollo de interfaces
                         de usuario modernas con las últimas tecnologías.
                     </p>
                     <p>
-                        Mi enfoque combina código limpio, mejores prácticas de desarrollo, y soluciones innovadoras 
-                        para entregar productos que no solo funcionan, sino que superan las expectativas y generan 
+                        Mi enfoque combina código limpio, mejores prácticas de desarrollo, y soluciones innovadoras
+                        para entregar productos que no solo funcionan, sino que superan las expectativas y generan
                         valor real para los usuarios.
                     </p>
                     <div class="about-highlights">
                         <div class="highlight-item">
                             <div class="highlight-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
                                 </svg>
                             </div>
                             <div class="highlight-content">
@@ -250,8 +266,10 @@
                         </div>
                         <div class="highlight-item">
                             <div class="highlight-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.43-.267a8.25 8.25 0 0110.382 1.562m0 0a15.998 15.998 0 003.388-1.62m-5.43-.267a8.25 8.25 0 0010.382 1.562M15.53 16.122a3 3 0 005.78 1.128 2.25 2.25 0 002.4 2.245 4.5 4.5 0 01-8.4-2.245c0-.399.078-.78.22-1.128zm0 0a15.998 15.998 0 01-3.388-1.62m5.43-.267a8.25 8.25 0 00-10.382-1.562m0 0a15.998 15.998 0 00-3.388 1.62m5.43.267a8.25 8.25 0 01-10.382 1.562" />
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.43-.267a8.25 8.25 0 0110.382 1.562m0 0a15.998 15.998 0 003.388-1.62m-5.43-.267a8.25 8.25 0 0010.382 1.562M15.53 16.122a3 3 0 005.78 1.128 2.25 2.25 0 002.4 2.245 4.5 4.5 0 01-8.4-2.245c0-.399.078-.78.22-1.128zm0 0a15.998 15.998 0 01-3.388-1.62m5.43-.267a8.25 8.25 0 00-10.382-1.562m0 0a15.998 15.998 0 00-3.388 1.62m5.43.267a8.25 8.25 0 01-10.382 1.562" />
                                 </svg>
                             </div>
                             <div class="highlight-content">
@@ -262,8 +280,10 @@
                         </div>
                         <div class="highlight-item">
                             <div class="highlight-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
                                 </svg>
                             </div>
                             <div class="highlight-content">
@@ -274,8 +294,10 @@
                         </div>
                         <div class="highlight-item">
                             <div class="highlight-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z" />
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z" />
                                 </svg>
                             </div>
                             <div class="highlight-content">
@@ -303,17 +325,25 @@
                                             <stop offset="100%" style="stop-color:#25344F;stop-opacity:0.6" />
                                         </linearGradient>
                                     </defs>
-                                    <circle cx="100" cy="100" r="80" fill="none" stroke="url(#hologramGradient)" stroke-width="3" opacity="0.6">
-                                        <animate attributeName="r" values="80;90;80" dur="3s" repeatCount="indefinite"/>
+                                    <circle cx="100" cy="100" r="80" fill="none" stroke="url(#hologramGradient)"
+                                        stroke-width="3" opacity="0.6">
+                                        <animate attributeName="r" values="80;90;80" dur="3s"
+                                            repeatCount="indefinite" />
                                     </circle>
-                                    <circle cx="100" cy="100" r="60" fill="none" stroke="url(#hologramGradient)" stroke-width="2" opacity="0.4">
-                                        <animate attributeName="r" values="60;70;60" dur="2s" repeatCount="indefinite"/>
+                                    <circle cx="100" cy="100" r="60" fill="none" stroke="url(#hologramGradient)"
+                                        stroke-width="2" opacity="0.4">
+                                        <animate attributeName="r" values="60;70;60" dur="2s"
+                                            repeatCount="indefinite" />
                                     </circle>
-                                    <circle cx="100" cy="100" r="40" fill="none" stroke="url(#hologramGradient)" stroke-width="2" opacity="0.3">
-                                        <animate attributeName="r" values="40;50;40" dur="1.5s" repeatCount="indefinite"/>
+                                    <circle cx="100" cy="100" r="40" fill="none" stroke="url(#hologramGradient)"
+                                        stroke-width="2" opacity="0.3">
+                                        <animate attributeName="r" values="40;50;40" dur="1.5s"
+                                            repeatCount="indefinite" />
                                     </circle>
-                                    <path d="M100 20 L120 100 L100 180 L80 100 Z" fill="url(#hologramGradient)" opacity="0.3">
-                                        <animateTransform attributeName="transform" type="rotate" values="0 100 100;360 100 100" dur="20s" repeatCount="indefinite"/>
+                                    <path d="M100 20 L120 100 L100 180 L80 100 Z" fill="url(#hologramGradient)"
+                                        opacity="0.3">
+                                        <animateTransform attributeName="transform" type="rotate"
+                                            values="0 100 100;360 100 100" dur="20s" repeatCount="indefinite" />
                                     </path>
                                 </svg>
                             </div>
@@ -346,25 +376,21 @@
                 </h2>
                 <p class="section-subtitle">Dominio completo de tecnologías modernas</p>
             </div>
-            
+
             <!-- Tech Categories -->
             <div class="tech-showcase">
                 <div class="tech-category">
                     <div class="category-header">
                         <div class="category-icon">⚛</div>
                         <h3 class="category-title">Frontend</h3>
-                        <span class="category-count">10</span>
+                        <span class="category-count">6</span>
                     </div>
                     <div class="tech-tags">
-                        <span class="tech-tag">React</span>
-                        <span class="tech-tag">Vue.js</span>
-                        <span class="tech-tag">Angular</span>
-                        <span class="tech-tag">Next.js</span>
                         <span class="tech-tag">HTML5</span>
                         <span class="tech-tag">CSS3</span>
                         <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">TypeScript</span>
-                        <span class="tech-tag">Sass</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Next.js</span>
                         <span class="tech-tag">Tailwind CSS</span>
                     </div>
                     <div class="category-glow"></div>
@@ -373,19 +399,14 @@
                     <div class="category-header">
                         <div class="category-icon">⚙</div>
                         <h3 class="category-title">Backend</h3>
-                        <span class="category-count">10</span>
+                        <span class="category-count">5</span>
                     </div>
                     <div class="tech-tags">
                         <span class="tech-tag">Node.js</span>
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">PHP</span>
-                        <span class="tech-tag">Java</span>
                         <span class="tech-tag">Express</span>
-                        <span class="tech-tag">Django</span>
-                        <span class="tech-tag">Laravel</span>
+                        <span class="tech-tag">Python</span>
                         <span class="tech-tag">FastAPI</span>
-                        <span class="tech-tag">Spring Boot</span>
-                        <span class="tech-tag">GraphQL</span>
+                        <span class="tech-tag">PHP</span>
                     </div>
                     <div class="category-glow"></div>
                 </div>
@@ -393,34 +414,28 @@
                     <div class="category-header">
                         <div class="category-icon">🗄</div>
                         <h3 class="category-title">Base de Datos</h3>
-                        <span class="category-count">6</span>
+                        <span class="category-count">4</span>
                     </div>
                     <div class="tech-tags">
                         <span class="tech-tag">MongoDB</span>
                         <span class="tech-tag">PostgreSQL</span>
                         <span class="tech-tag">MySQL</span>
-                        <span class="tech-tag">Redis</span>
                         <span class="tech-tag">Firebase</span>
-                        <span class="tech-tag">Supabase</span>
                     </div>
                     <div class="category-glow"></div>
                 </div>
                 <div class="tech-category">
                     <div class="category-header">
                         <div class="category-icon">☁</div>
-                        <h3 class="category-title">Cloud & Mobile</h3>
-                        <span class="category-count">9</span>
+                        <h3 class="category-title">Cloud & Tools</h3>
+                        <span class="category-count">5</span>
                     </div>
                     <div class="tech-tags">
-                        <span class="tech-tag">React Native</span>
-                        <span class="tech-tag">Flutter</span>
-                        <span class="tech-tag">Ionic</span>
-                        <span class="tech-tag">AWS</span>
-                        <span class="tech-tag">Azure</span>
-                        <span class="tech-tag">GCP</span>
+                        <span class="tech-tag">Git</span>
+                        <span class="tech-tag">Vercel</span>
+                        <span class="tech-tag">Netlify</span>
                         <span class="tech-tag">Docker</span>
-                        <span class="tech-tag">Kubernetes</span>
-                        <span class="tech-tag">CI/CD</span>
+                        <span class="tech-tag">Figma</span>
                     </div>
                     <div class="category-glow"></div>
                 </div>
@@ -431,121 +446,68 @@
                 <div class="skill-card">
                     <div class="skill-header">
                         <div class="skill-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
                             </svg>
                         </div>
                         <h3>Frontend</h3>
                     </div>
-                    <p>React, Vue, Angular, Next.js, HTML5, CSS3, JavaScript, TypeScript</p>
+                    <p>HTML5, CSS3, JavaScript, React, Next.js, Tailwind CSS</p>
                     <div class="skill-level">
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 95%">
-                                <div class="skill-progress-glow"></div>
-                            </div>
-                        </div>
-                        <span>95%</span>
+                        <span class="skill-level-tag advanced">Avanzado</span>
                     </div>
                     <div class="skill-glow"></div>
                 </div>
                 <div class="skill-card">
                     <div class="skill-header">
                         <div class="skill-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 17.25v-8.5a2.25 2.25 0 00-1.5-2.25h-15a2.25 2.25 0 00-1.5 2.25v8.5a2.25 2.25 0 001.5 2.25h15a2.25 2.25 0 001.5-2.25z" />
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6h16.5M3.75 12h16.5m-16.5 6h16.5" />
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M5.25 14.25h13.5m-13.5 0a3 3 0 01-3-3m3 3a3 3 0 100 6h13.5a3 3 0 100-6m-16.5-3a3 3 0 013-3h13.5a3 3 0 013 3m-19.5 0a4.5 4.5 0 01.9-2.7L5.737 5.1a3 3 0 012.45-1.272h7.626a3 3 0 012.45 1.272l2.187 3.35a4.5 4.5 0 01.9 2.7" />
                             </svg>
                         </div>
                         <h3>Backend</h3>
                     </div>
-                    <p>Node.js, Python, PHP, Java, Express, Django, Laravel, FastAPI</p>
+                    <p>Node.js, Express, Python, FastAPI, PHP</p>
                     <div class="skill-level">
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 90%">
-                                <div class="skill-progress-glow"></div>
-                            </div>
-                        </div>
-                        <span>90%</span>
+                        <span class="skill-level-tag intermediate">Intermedio</span>
                     </div>
                     <div class="skill-glow"></div>
                 </div>
                 <div class="skill-card">
                     <div class="skill-header">
                         <div class="skill-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.43-.267a8.25 8.25 0 0110.382 1.562m0 0a15.998 15.998 0 003.388-1.62m-5.43-.267a8.25 8.25 0 0010.382 1.562M15.53 16.122a3 3 0 005.78 1.128 2.25 2.25 0 002.4 2.245 4.5 4.5 0 01-8.4-2.245c0-.399.078-.78.22-1.128zm0 0a15.998 15.998 0 01-3.388-1.62m5.43-.267a8.25 8.25 0 00-10.382-1.562m0 0a15.998 15.998 0 00-3.388 1.62m5.43.267a8.25 8.25 0 01-10.382 1.562" />
-                            </svg>
-                        </div>
-                        <h3>Diseño</h3>
-                    </div>
-                    <p>Figma, Adobe XD, UI/UX, Prototipado, Design Systems</p>
-                    <div class="skill-level">
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 85%">
-                                <div class="skill-progress-glow"></div>
-                            </div>
-                        </div>
-                        <span>85%</span>
-                    </div>
-                    <div class="skill-glow"></div>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-header">
-                        <div class="skill-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
-                            </svg>
-                        </div>
-                        <h3>Mobile</h3>
-                    </div>
-                    <p>React Native, Flutter, Ionic, iOS, Android</p>
-                    <div class="skill-level">
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 88%">
-                                <div class="skill-progress-glow"></div>
-                            </div>
-                        </div>
-                        <span>88%</span>
-                    </div>
-                    <div class="skill-glow"></div>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-header">
-                        <div class="skill-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5 0c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125" />
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5 0c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125" />
                             </svg>
                         </div>
                         <h3>Base de Datos</h3>
                     </div>
-                    <p>MongoDB, PostgreSQL, MySQL, Redis, Firebase, Supabase</p>
+                    <p>MongoDB, PostgreSQL, MySQL, Firebase</p>
                     <div class="skill-level">
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 92%">
-                                <div class="skill-progress-glow"></div>
-                            </div>
-                        </div>
-                        <span>92%</span>
+                        <span class="skill-level-tag intermediate">Intermedio</span>
                     </div>
                     <div class="skill-glow"></div>
                 </div>
                 <div class="skill-card">
                     <div class="skill-header">
                         <div class="skill-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 004.5 4.5H18a3.75 3.75 0 001.332-7.257 3 3 0 00-3.758-3.848 5.25 5.25 0 00-10.233 2.33A4.502 4.502 0 002.25 15z" />
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.43-.267a8.25 8.25 0 0110.382 1.562" />
                             </svg>
                         </div>
-                        <h3>Cloud & DevOps</h3>
+                        <h3>Diseño &amp; Tools</h3>
                     </div>
-                    <p>AWS, Azure, GCP, Docker, Kubernetes, CI/CD, Terraform</p>
+                    <p>Figma, UI/UX, Git, Docker, Vercel, Netlify</p>
                     <div class="skill-level">
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 87%">
-                                <div class="skill-progress-glow"></div>
-                            </div>
-                        </div>
-                        <span>87%</span>
+                        <span class="skill-level-tag intermediate">Intermedio</span>
                     </div>
                     <div class="skill-glow"></div>
                 </div>
@@ -585,10 +547,12 @@
                             <div class="project-overlay-content">
                                 <h4>Panel Jefita</h4>
                                 <p>Dashboard ejecutivo completo</p>
-                                <a href="https://panel-jefita.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-link">
+                                <a href="https://panel-jefita.netlify.app/" target="_blank" rel="noopener noreferrer"
+                                    class="project-link">
                                     <span>Ver Proyecto</span>
                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                        <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
                                 </a>
                             </div>
@@ -602,28 +566,35 @@
                                 <span class="project-badge">Production</span>
                             </div>
                         </div>
-                        <p>Panel ejecutivo de KPI & OKR con control integral, data en tiempo real, comparativos y mejora continua para gestión empresarial.</p>
+                        <p>Panel ejecutivo de KPI & OKR con control integral, data en tiempo real, comparativos y mejora
+                            continua para gestión empresarial.</p>
                         <div class="project-features">
                             <div class="feature-item">
                                 <span class="feature-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h3.75c.621 0 1.125.504 1.125 1.125v6.75C9 21.496 8.496 22 7.875 22h-3.75A1.125 1.125 0 013 20.875v-7.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-3.75a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h3.75C21.496 3 22 3.504 22 4.125v16.75c0 .621-.504 1.125-1.125 1.125h-3.75a1.125 1.125 0 01-1.125-1.125V4.125z" />
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M3 13.125C3 12.504 3.504 12 4.125 12h3.75c.621 0 1.125.504 1.125 1.125v6.75C9 21.496 8.496 22 7.875 22h-3.75A1.125 1.125 0 013 20.875v-7.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-3.75a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h3.75C21.496 3 22 3.504 22 4.125v16.75c0 .621-.504 1.125-1.125 1.125h-3.75a1.125 1.125 0 01-1.125-1.125V4.125z" />
                                     </svg>
                                 </span>
                                 <span>Dashboard en tiempo real</span>
                             </div>
                             <div class="feature-item">
                                 <span class="feature-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.94" />
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.94" />
                                     </svg>
                                 </span>
                                 <span>KPI & OKR tracking</span>
                             </div>
                             <div class="feature-item">
                                 <span class="feature-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5M9 11.25v1.5M12 9v3.75m3-3.75v3.75m0 0h-3m3 0h3" />
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5M9 11.25v1.5M12 9v3.75m3-3.75v3.75m0 0h-3m3 0h3" />
                                     </svg>
                                 </span>
                                 <span>Análisis comparativos</span>
@@ -653,10 +624,12 @@
                             <div class="project-overlay-content">
                                 <h4>Zazu Express</h4>
                                 <p>Sistema financiero completo</p>
-                                <a href="https://zazu-express.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-link">
+                                <a href="https://zazu-express.netlify.app/" target="_blank" rel="noopener noreferrer"
+                                    class="project-link">
                                     <span>Ver Proyecto</span>
                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                        <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
                                 </a>
                             </div>
@@ -670,28 +643,35 @@
                                 <span class="project-badge">Production</span>
                             </div>
                         </div>
-                        <p>Sistema de gestión de gastos y control interno con operaciones, zonas, caja efectivo, reportes avanzados y dashboard administrativo.</p>
+                        <p>Sistema de gestión de gastos y control interno con operaciones, zonas, caja efectivo,
+                            reportes avanzados y dashboard administrativo.</p>
                         <div class="project-features">
                             <div class="feature-item">
                                 <span class="feature-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                                     </svg>
                                 </span>
                                 <span>Control de gastos</span>
                             </div>
                             <div class="feature-item">
                                 <span class="feature-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
                                     </svg>
                                 </span>
                                 <span>Reportes avanzados</span>
                             </div>
                             <div class="feature-item">
                                 <span class="feature-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-1.5-1.5h-9m9 0v18m-9 0v-18" />
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-1.5-1.5h-9m9 0v18m-9 0v-18" />
                                     </svg>
                                 </span>
                                 <span>Gestión multi-zona</span>
@@ -709,59 +689,80 @@
                 </div>
                 <div class="project-card">
                     <div class="project-header">
-                        <span class="project-status developing"></span>
+                        <span class="project-status active"></span>
                         <span class="project-category">E-commerce</span>
                     </div>
-                    <div class="project-image project-image-icon">
-                        <div class="project-icon-wrapper">
-                            <svg class="project-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12A1.5 1.5 0 0118.18 21H5.82a1.5 1.5 0 01-1.481-1.993l1.263-12A1.5 1.5 0 017.18 6h9.64a1.5 1.5 0 011.481 1.507z" />
-                            </svg>
+                    <div class="project-image">
+                        <div class="project-image-wrapper">
+                            <div class="project-image-placeholder nocturna-gradient">
+                                <span class="placeholder-brand">NOCTURNA PR</span>
+                                <span class="placeholder-sub">URBAN MACHINE</span>
+                            </div>
+                            <div class="project-image-overlay"></div>
                         </div>
                         <div class="project-overlay">
-                            <span class="project-link project-link-disabled">
-                                <span>EN DESARROLLO</span>
-                            </span>
+                            <div class="project-overlay-content">
+                                <h4>Nocturna PR</h4>
+                                <p>Premium Streetwear Store</p>
+                                <a href="https://nocturna-pr.vercel.app/" target="_blank" rel="noopener noreferrer"
+                                    class="project-link">
+                                    <span>Ver Proyecto</span>
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <div class="project-info">
                         <div class="project-info-header">
-                            <h3>Tienda Nocturna</h3>
+                            <h3>Nocturna PR</h3>
                             <div class="project-badges">
-                                <span class="project-badge">En Desarrollo</span>
+                                <span class="project-badge">Live</span>
+                                <span class="project-badge">Production</span>
                             </div>
                         </div>
-                        <p>Plataforma de comercio electrónico en desarrollo. Próximamente disponible con sistema de pagos integrado y gestión de inventario.</p>
+                        <p>Tienda online de streetwear premium inspirado en cultura JDM y motorsport. Colección 2026 con
+                            25+ productos, carrito, favoritos, checkout y pagos Yape/BCP.</p>
                         <div class="project-features">
                             <div class="feature-item">
                                 <span class="feature-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
                                     </svg>
                                 </span>
-                                <span>Carrito de compras</span>
+                                <span>Carrito & Checkout</span>
                             </div>
                             <div class="feature-item">
                                 <span class="feature-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5z" />
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5z" />
                                     </svg>
                                 </span>
-                                <span>Sistema de pagos</span>
+                                <span>Pagos Yape & BCP</span>
                             </div>
                             <div class="feature-item">
                                 <span class="feature-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z" />
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
                                     </svg>
                                 </span>
-                                <span>Gestión de inventario</span>
+                                <span>Favoritos & Catálogo</span>
                             </div>
                         </div>
                         <div class="project-tags">
-                            <span>En Desarrollo</span>
                             <span>E-commerce</span>
-                            <span>Próximamente</span>
+                            <span>Streetwear</span>
+                            <span>JavaScript</span>
+                            <span>CSS</span>
+                            <span>Vercel</span>
                         </div>
                     </div>
                     <div class="project-glow"></div>
@@ -794,24 +795,30 @@
                         ¿Tienes un proyecto en mente?
                         <span class="code-symbol">/&gt;</span>
                     </h3>
-                    <p>Estoy siempre abierto a discutir nuevos proyectos, ideas creativas o oportunidades para ser parte de tus visiones. No dudes en contactarme.</p>
+                    <p>Estoy siempre abierto a discutir nuevos proyectos, ideas creativas o oportunidades para ser parte
+                        de tus visiones. No dudes en contactarme.</p>
                     <div class="contact-details">
                         <div class="contact-item">
                             <div class="contact-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
                                 </svg>
                             </div>
                             <div>
                                 <h4>Email</h4>
-                                <a href="mailto:jamesrojasdiaz01@gmail.com" class="contact-link">jamesrojasdiaz01@gmail.com</a>
+                                <a href="mailto:jamesrojasdiaz01@gmail.com"
+                                    class="contact-link">jamesrojasdiaz01@gmail.com</a>
                             </div>
                             <div class="contact-glow"></div>
                         </div>
                         <div class="contact-item">
                             <div class="contact-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
                                 </svg>
                             </div>
                             <div>
@@ -822,34 +829,32 @@
                         </div>
                         <div class="contact-item contact-item-location">
                             <div class="contact-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
                                 </svg>
                             </div>
                             <div class="contact-location-content">
                                 <h4>Ubicación</h4>
                                 <p>San Borja, Perú</p>
                                 <div class="location-map">
-                                    <iframe 
+                                    <iframe
                                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.5!2d-77.008!3d-12.086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8f8b8b8b8b%3A0x8b8b8b8b8b8b8b8b!2sSan%20Borja%2C%20Lima%2015021%2C%20Peru!5e0!3m2!1ses!2spe!4v1700000000000!5m2!1ses!2spe"
-                                        width="100%" 
-                                        height="200" 
-                                        style="border:0; border-radius: 12px;" 
-                                        allowfullscreen="" 
-                                        loading="lazy" 
-                                        referrerpolicy="no-referrer-when-downgrade"
+                                        width="100%" height="200" style="border:0; border-radius: 12px;"
+                                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
                                         sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"
                                         title="Ubicación: San Borja, Perú"
                                         aria-label="Mapa de ubicación en San Borja, Perú">
                                     </iframe>
                                 </div>
-                                <a href="https://wa.me/51977446511?text=Hola%20Tino,%20me%20interesa%20trabajar%20contigo%20en%20un%20proyecto" 
-                                   target="_blank" 
-                                   rel="noopener noreferrer" 
-                                   class="whatsapp-button">
+                                <a href="https://wa.me/51977446511?text=Hola%20Tino,%20me%20interesa%20trabajar%20contigo%20en%20un%20proyecto"
+                                    target="_blank" rel="noopener noreferrer" class="whatsapp-button">
                                     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                                        <path
+                                            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
                                     </svg>
                                     <span>Enviar WhatsApp</span>
                                 </a>
@@ -858,67 +863,52 @@
                         </div>
                     </div>
                     <div class="social-links">
-                        <a href="https://github.com/tinomakerzazu" target="_blank" rel="noopener noreferrer" class="social-link">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
+                        <a href="https://github.com/tinomakerzazu" target="_blank" rel="noopener noreferrer"
+                            class="social-link" aria-label="Perfil de GitHub">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
                             </svg>
                             <span>GitHub</span>
                         </a>
-                        <a href="#" class="social-link">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                            </svg>
-                            <span>LinkedIn</span>
-                        </a>
-                        <a href="#" class="social-link">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
-                            </svg>
-                            <span>Twitter</span>
-                        </a>
-                        <a href="#" class="social-link">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                            </svg>
-                            <span>Instagram</span>
-                        </a>
                     </div>
                 </div>
-                <form class="contact-form">
+                <form class="contact-form" name="contact" data-netlify="true" method="POST">
                     <div class="form-group">
-                        <label>
+                        <label for="name">
                             <span class="label-icon">▸</span>
                             Nombre
                         </label>
-                        <input type="text" placeholder="Tu nombre" required>
+                        <input type="text" id="name" name="name" placeholder="Tu nombre" required>
                     </div>
                     <div class="form-group">
-                        <label>
+                        <label for="email">
                             <span class="label-icon">▸</span>
                             Email
                         </label>
-                        <input type="email" placeholder="tu@email.com" required>
+                        <input type="email" id="email" name="email" placeholder="tu@email.com" required>
                     </div>
                     <div class="form-group">
-                        <label>
+                        <label for="subject">
                             <span class="label-icon">▸</span>
                             Asunto
                         </label>
-                        <input type="text" placeholder="Asunto del mensaje" required>
+                        <input type="text" id="subject" name="subject" placeholder="Asunto del mensaje" required>
                     </div>
                     <div class="form-group">
-                        <label>
+                        <label for="message">
                             <span class="label-icon">▸</span>
                             Mensaje
                         </label>
-                        <textarea placeholder="Tu mensaje..." rows="5" required></textarea>
+                        <textarea id="message" name="message" placeholder="Tu mensaje..." rows="5" required></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">
                         <span class="btn-bg"></span>
                         <span class="btn-content">
                             <span>Enviar Mensaje</span>
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                <path d="M2.5 17.5L17.5 2.5M17.5 2.5H7.5M17.5 2.5V12.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M2.5 17.5L17.5 2.5M17.5 2.5H7.5M17.5 2.5V12.5" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                         </span>
                         <div class="btn-shine"></div>
@@ -932,22 +922,25 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <p>&copy; 2024 Tino Stacker. Todos los derechos reservados.</p>
+                <p>&copy;
+                    <script>document.write(new Date().getFullYear())</script> Tino Stacker. Todos los derechos
+                    reservados.
+                </p>
                 <div class="footer-links">
-                    <span>Powered by</span>
-                    <span class="footer-tech">React</span>
+                    <span>Hecho con</span>
+                    <span class="footer-tech">HTML</span>
                     <span class="footer-separator">•</span>
-                    <span class="footer-tech">Node.js</span>
+                    <span class="footer-tech">CSS</span>
                     <span class="footer-separator">•</span>
-                    <span class="footer-tech">Vercel</span>
+                    <span class="footer-tech">JavaScript</span>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- Notifications Container -->
-    <div class="notifications-container" id="notificationsContainer"></div>
+
 
     <script src="js/script.js"></script>
 </body>
+
 </html>

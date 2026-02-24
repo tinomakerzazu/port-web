@@ -185,7 +185,7 @@ function initCanvasAnimation() {
             this.speedX = Math.random() * 2 - 1;
             this.speedY = Math.random() * 2 - 1;
             this.opacity = Math.random() * 0.5 + 0.2;
-            this.color = `rgba(213, 184, 147, ${this.opacity})`;
+            this.color = `rgba(220, 20, 60, ${this.opacity})`;
             this.connections = []; // Store connections to avoid recalculating
         }
         
@@ -254,13 +254,13 @@ function initCanvasAnimation() {
         connectionUpdateCounter++;
         
         // Draw connections
-        ctx.strokeStyle = 'rgba(213, 184, 147, 0.3)';
+        ctx.strokeStyle = 'rgba(220, 20, 60, 0.3)';
         ctx.lineWidth = 1;
         particles.forEach(p1 => {
             p1.connections.forEach(({ particle: p2, distanceSq }) => {
                 const distance = Math.sqrt(distanceSq);
                 const opacity = (1 - distance / connectionDistance) * 0.3;
-                ctx.strokeStyle = `rgba(213, 184, 147, ${opacity})`;
+                ctx.strokeStyle = `rgba(220, 20, 60, ${opacity})`;
                 ctx.beginPath();
                 ctx.moveTo(p1.x, p1.y);
                 ctx.lineTo(p2.x, p2.y);
@@ -298,7 +298,7 @@ function createFloatingParticles() {
     
     const particleCount = 80;
     const colors = [
-        'rgba(213, 184, 147, 0.5)',
+        'rgba(220, 20, 60, 0.5)',
         'rgba(97, 120, 145, 0.4)',
         'rgba(111, 77, 56, 0.3)',
         'rgba(99, 32, 36, 0.3)'
@@ -469,53 +469,9 @@ document.querySelectorAll('.hero-stats').forEach(container => {
     statsObserver.observe(container);
 });
 
-// Skill progress bars animation
-const skillBarsObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            const progressBar = entry.target.querySelector('.skill-progress');
-            if (progressBar && !progressBar.classList.contains('animated')) {
-                progressBar.classList.add('animated');
-                const width = progressBar.style.width;
-                progressBar.style.width = '0%';
-                setTimeout(() => {
-                    progressBar.style.width = width;
-                }, 200);
-            }
-        }
-    });
-}, { threshold: 0.5 });
 
-document.querySelectorAll('.skill-card').forEach(card => {
-    skillBarsObserver.observe(card);
-});
 
-// Form submission
-const contactForm = document.querySelector('.contact-form');
-if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        
-        const submitButton = contactForm.querySelector('button[type="submit"]');
-        const originalText = submitButton.querySelector('span').textContent;
-        
-        // Animate button
-        submitButton.style.transform = 'scale(0.95)';
-        submitButton.querySelector('span').textContent = 'Enviando...';
-        
-        setTimeout(() => {
-            submitButton.style.transform = 'scale(1)';
-            submitButton.querySelector('span').textContent = '¡Enviado!';
-            submitButton.style.background = 'linear-gradient(135deg, #10b981 0%, #059669 100%)';
-            
-            setTimeout(() => {
-                submitButton.querySelector('span').textContent = originalText;
-                submitButton.style.background = '';
-                contactForm.reset();
-            }, 2000);
-        }, 1000);
-    });
-}
+
 
 // Parallax effect for hero background
 function updateParallax() {
@@ -740,11 +696,18 @@ function initScrollReveal() {
 window.addEventListener('load', () => {
     document.body.classList.add('loaded');
     
-    // Initialize canvas animation
-    initCanvasAnimation();
+    // Check for reduced motion preference
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     
-    // Initialize floating particles
-    createFloatingParticles();
+    // Initialize canvas animation (skip if reduced motion)
+    if (!prefersReducedMotion) {
+        initCanvasAnimation();
+    }
+    
+    // Initialize floating particles (skip if reduced motion)
+    if (!prefersReducedMotion) {
+        createFloatingParticles();
+    }
     
     // Initialize typing effect
     initTypingEffect();
@@ -780,11 +743,10 @@ window.addEventListener('load', () => {
     // Initialize custom cursor
     initCustomCursor();
     
-    // Initialize hologram canvas
-    initHologramCanvas();
-    
-    // Initialize notifications system
-    initNotifications();
+    // Initialize hologram canvas (skip if reduced motion)
+    if (!prefersReducedMotion) {
+        initHologramCanvas();
+    }
 });
 
 // Custom Cursor
@@ -886,9 +848,9 @@ function initHologramCanvas() {
         draw() {
             ctx.beginPath();
             ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-            ctx.fillStyle = `rgba(213, 184, 147, ${this.opacity})`;
+            ctx.fillStyle = `rgba(220, 20, 60, ${this.opacity})`;
             ctx.shadowBlur = 10;
-            ctx.shadowColor = 'rgba(213, 184, 147, 0.8)';
+            ctx.shadowColor = 'rgba(220, 20, 60, 0.8)';
             ctx.fill();
         }
     }
@@ -914,7 +876,7 @@ function initHologramCanvas() {
                 if (distanceSq < connectionDistanceSq) {
                     const distance = Math.sqrt(distanceSq);
                     ctx.beginPath();
-                    ctx.strokeStyle = `rgba(213, 184, 147, ${0.2 * (1 - distance / connectionDistance)})`;
+                    ctx.strokeStyle = `rgba(220, 20, 60, ${0.2 * (1 - distance / connectionDistance)})`;
                     ctx.lineWidth = 1;
                     ctx.moveTo(particles[i].x, particles[i].y);
                     ctx.lineTo(particles[j].x, particles[j].y);
@@ -968,176 +930,7 @@ function initHologramCanvas() {
     }
 }
 
-// Notifications System - Client Requests
-function initNotifications() {
-    const notificationsContainer = document.getElementById('notificationsContainer');
-    if (!notificationsContainer) return;
-    
-    // Fictional client data - More realistic and varied
-    const clientNames = [
-        'María González', 'Carlos Rodríguez', 'Ana Martínez', 'Luis Fernández',
-        'Sofia Pérez', 'Diego Sánchez', 'Valentina López', 'Andrés Torres',
-        'Camila Ramírez', 'Sebastián Gómez', 'Isabella Herrera', 'Mateo Díaz',
-        'Lucía Morales', 'Nicolás Castro', 'Emma Vargas', 'Daniel Jiménez',
-        'Olivia Ruiz', 'Gabriel Mendoza', 'Amelia Ortega', 'Santiago Navarro',
-        'Roberto Silva', 'Patricia Vega', 'Fernando Castro', 'Laura Mendoza',
-        'Ricardo Paredes', 'Carmen Flores', 'Javier Ríos', 'Monica Herrera'
-    ];
-    
-    const companyTypes = [
-        'Restaurante', 'Tienda Online', 'Consultoría', 'Startup Tech',
-        'E-commerce', 'Agencia Digital', 'Negocio Local', 'Empresa Familiar',
-        'Freelancer', 'ONG', 'Clínica', 'Gimnasio', 'Hotel', 'Cafetería',
-        'Tienda de Ropa', 'Servicios Profesionales', 'Educación Online', 'Bienes Raíces',
-        'Farmacia', 'Taller Mecánico', 'Salón de Belleza', 'Academia', 'Veterinaria',
-        'Estudio Fotográfico', 'Bufete de Abogados', 'Inmobiliaria'
-    ];
-    
-    const projectTypes = [
-        'página web corporativa',
-        'tienda online',
-        'landing page',
-        'portafolio profesional',
-        'sitio web empresarial',
-        'plataforma e-commerce',
-        'aplicación web',
-        'sitio web institucional',
-        'sitio web responsive',
-        'plataforma de gestión',
-        'sistema de reservas online'
-    ];
-    
-    const emailDomains = [
-        'gmail.com', 'outlook.com', 'yahoo.com', 'hotmail.com',
-        'empresa.com', 'negocio.com', 'startup.com', 'consultoria.com',
-        'protonmail.com', 'icloud.com', 'live.com'
-    ];
-    
-    const requestMessages = [
-        'Solicitud para crear una',
-        'Necesito desarrollar una',
-        'Estoy interesado en una',
-        'Buscamos crear una',
-        'Queremos implementar una',
-        'Requiero una',
-        'Necesitamos una'
-    ];
-    
-    function generateClientEmail(name) {
-        const nameParts = name.toLowerCase().split(' ');
-        const firstName = nameParts[0];
-        const lastName = nameParts[1] || nameParts[0];
-        const domain = emailDomains[Math.floor(Math.random() * emailDomains.length)];
-        
-        // More realistic email variations
-        const variations = [
-            `${firstName}.${lastName}@${domain}`,
-            `${firstName}${lastName}@${domain}`,
-            `${firstName}_${lastName}@${domain}`,
-            `${firstName}${Math.floor(Math.random() * 99) + 1}@${domain}`,
-            `${lastName}.${firstName}@${domain}`
-        ];
-        
-        return variations[Math.floor(Math.random() * variations.length)];
-    }
-    
-    function getInitials(name) {
-        const parts = name.split(' ');
-        if (parts.length >= 2) {
-            return (parts[0][0] + parts[1][0]).toUpperCase();
-        }
-        return name.substring(0, 2).toUpperCase();
-    }
-    
-    function getRandomTimeAgo() {
-        // More realistic time variations (2-30 minutes)
-        const minutes = [2, 3, 4, 5, 7, 10, 12, 15, 18, 20, 25, 30];
-        const selectedMin = minutes[Math.floor(Math.random() * minutes.length)];
-        return `Hace ${selectedMin} min`;
-    }
-    
-    function createNotification() {
-        const clientName = clientNames[Math.floor(Math.random() * clientNames.length)];
-        const companyType = companyTypes[Math.floor(Math.random() * companyTypes.length)];
-        const projectType = projectTypes[Math.floor(Math.random() * projectTypes.length)];
-        const requestMessage = requestMessages[Math.floor(Math.random() * requestMessages.length)];
-        const clientEmail = generateClientEmail(clientName);
-        const initials = getInitials(clientName);
-        const timeAgo = getRandomTimeAgo();
-        
-        const notification = document.createElement('div');
-        notification.className = 'notification';
-        notification.innerHTML = `
-            <div class="notification-pulse"></div>
-            <div class="notification-header">
-                <div class="notification-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
-                    </svg>
-                </div>
-                <button class="notification-close" aria-label="Cerrar notificación">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                    </svg>
-                </button>
-            </div>
-            <div class="notification-content">
-                <div class="notification-title">Nueva Solicitud de Proyecto</div>
-                <div class="notification-message">
-                    ${requestMessage} <strong>${projectType}</strong> para <strong>${companyType}</strong>.
-                </div>
-                <div class="notification-client">
-                    <div class="notification-avatar">${initials}</div>
-                    <div class="notification-client-info">
-                        <div class="notification-client-name">${clientName}</div>
-                        <div class="notification-client-email">${clientEmail}</div>
-                    </div>
-                </div>
-                <div class="notification-time">${timeAgo}</div>
-            </div>
-        `;
-        
-        // Add close functionality
-        const closeBtn = notification.querySelector('.notification-close');
-        closeBtn.addEventListener('click', () => {
-            removeNotification(notification);
-        });
-        
-        // Auto-remove after 10 seconds (longer for 2-minute intervals)
-        setTimeout(() => {
-            removeNotification(notification);
-        }, 10000);
-        
-        notificationsContainer.appendChild(notification);
-        
-        // Limit to 3 notifications max
-        const notifications = notificationsContainer.querySelectorAll('.notification');
-        if (notifications.length > 3) {
-            removeNotification(notifications[0]);
-        }
-    }
-    
-    function removeNotification(notification) {
-        if (!notification || !notification.parentNode) return;
-        
-        notification.classList.add('slide-out');
-        setTimeout(() => {
-            if (notification.parentNode) {
-                notification.remove();
-            }
-        }, 400);
-    }
-    
-    // Create first notification after 30 seconds (more realistic)
-    setTimeout(() => {
-        createNotification();
-    }, 30000);
-    
-    // Create notifications every 2 minutes (120000 ms)
-    setInterval(() => {
-        createNotification();
-    }, 120000);
-}
+
 
 // Performance optimization: Throttle scroll events
 function throttle(func, wait) {
